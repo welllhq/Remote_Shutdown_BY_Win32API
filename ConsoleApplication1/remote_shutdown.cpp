@@ -22,7 +22,7 @@ void remote_shutdown(int shutdownFlags) {
     switch (shutdownFlags) {
     case 0:
         /*MessageBox(NULL, L"假设关机成功", L"debug", 0);*/
-        system("shutdown -s -f -t 60");
+        system("shutdown -s -f -t 10");
         break;
     case 1:
         system("shutdown -h");
